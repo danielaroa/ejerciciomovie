@@ -1,0 +1,46 @@
+body {
+	background: #191313;
+}
+input.search-query {
+    width: 75%;
+    font-size: 2vw;
+    font-family: 'Roboto Slab', serif;
+    padding: 15px;
+}
+.search__movie {
+    float: right;
+    width: 100%;
+    position: fixed;
+    top: 45%;
+    left: 0;
+    text-align: center;
+    margin: 0;
+}
+.search__movie i {
+	position: relative;
+    right: 50px;
+    top: 5px;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.search__results {
+	display: none;
+}
+.movie__header {
+	font-size: 2vw;
+    color: #fff;
+    text-align: center;
+    height: 80px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.movie__header h1 {
+	margin: 0;
+    padding: 25px;
+    color: #00d373;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+.movie__header img {
+	float: left;
+}
