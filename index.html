@@ -19,9 +19,12 @@
 	<div class="container">
         <div class="search__movie">
             <input type="text" class="search-query" placeholder="Search">
-            <i id="search__action" class="glyphicon glyphicon-search"></i>
+            <i id="search__action" onclick="ajax_movie_search(this);" class="glyphicon glyphicon-search"></i>
         </div>
-		<div class="row search__results">Results</div> 
+		<div class="row search__results">Results
+			
+		</div> 
+		<div class="movies__pagination"></div>
 	</div>
 <footer>
 	

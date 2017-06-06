@@ -44,3 +44,68 @@ input.search-query {
 .movie__header img {
 	float: left;
 }
+.movies__pagination {
+	position: absolute;
+    bottom: 5%;
+    left: 40%;
+    display: inline-flex;
+    color: #fff;
+    font-size: 2vw;
+}
+.movies__pagination div {
+	width: 40px;
+    text-align: center;
+    border: 3px dotted #00d373;
+    cursor: pointer;
+    margin: 5px;
+}
+.small_search__movie {
+    font-size: 1vw;
+    right: 5%;
+    width: 50%;
+    top: 7%;
+    left: inherit;
+    -webkit-animation-name: movie_search; 
+    -webkit-animation-duration: 4s; 
+    animation-name: movie_search;
+    animation-duration: 500ms;
+    position: fixed;
+    text-align: right;
+    margin: 0;
+}
+
+@-webkit-keyframes movie_search {
+    from {top: 45%;}
+    to {top: 10%;}
+}
+.small_search__movie input.search-query {
+	padding: 5px;
+	width: 50%;
+	font-size: 1.5vw;
+}
+.small_movie__header {
+	display: inline-block;
+	width: 80%;
+	margin: 0;
+    padding: 25px;
+    color: #00d373;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+.small_movie__header h1{
+	font-size: 1.5vw;
+    text-align: -webkit-center;
+    width: 60%;
+    display: inline-block;
+}
+.small_search__movie i {
+	position: relative;
+    right: 35px;
+    top: 3px;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.movie_image img {
+	width: 100%;
+	height: auto;
+}
