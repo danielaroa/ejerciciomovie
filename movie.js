@@ -18,9 +18,9 @@
 		}
 		var query__search = $('.search-query').val();
 		if ($(value).attr('id') != 'undefined') {
-			api_url = 'http://api.themoviedb.org/3/search/movie?api_key=9e5135f25702940a7def85a4e6855df1&query='+query__search+'&page='+ $(value).attr('id') +'&include_adult=true';
+			api_url = 'https://api.themoviedb.org/3/search/movie?api_key=9e5135f25702940a7def85a4e6855df1&query='+query__search+'&page='+ $(value).attr('id') +'&include_adult=true';
 		} else {
-			api_url = 'http://api.themoviedb.org/3/search/movie?api_key=9e5135f25702940a7def85a4e6855df1&query='+query__search+'&include_adult=true';
+			api_url = 'https://api.themoviedb.org/3/search/movie?api_key=9e5135f25702940a7def85a4e6855df1&query='+query__search+'&include_adult=true';
 		}
 		$.ajax({
 		  	url: api_url,
@@ -49,7 +49,7 @@
 					  	dataType: 'json',
 					 	success: function(data) {
 					 		console.log(data);
-					 		var img_url = 'http://image.tmdb.org/t/p/w' +data.posters[0].width +data.posters[0].file_path;
+					 		var img_url = 'https://image.tmdb.org/t/p/w' +data.posters[0].width +data.posters[0].file_path;
 					 		console.log(img_url);
 					 		$('.search__results').append('<div class="col-sm-3 movie_image" id="'+data.id+'"><img id="img-'+data.id+'"></div>');
 					 		$('.search__results img#img-'+data.id).attr('src', img_url);
