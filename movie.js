@@ -28,6 +28,7 @@
 		  	dataType: 'json',
 
 		  	success: function (data) {
+		  		$('.search__results').empty();
 		  		var pages = data.total_pages;
 		  		if (!ajax_search){
 		  			ajax_search = true;
