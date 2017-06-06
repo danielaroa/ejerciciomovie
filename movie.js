@@ -7,7 +7,6 @@
 		if($(value).attr('id') == 'search__action'){
 			if ( ajax_search  == true ) {
 				$('.movies__pagination').empty();
-				$('.search__results').empty();
 			}
 			ajax_search = false;
 		}else{
@@ -29,6 +28,7 @@
 		  	dataType: 'json',
 
 		  	success: function (data) {
+		  		$('.search__results').empty();
 		  		var pages = data.total_pages;
 		  		if (!ajax_search){
 		  			ajax_search = true;
