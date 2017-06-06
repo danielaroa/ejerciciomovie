@@ -7,6 +7,7 @@
 		if($(value).attr('id') == 'search__action'){
 			if ( ajax_search  == true ) {
 				$('.movies__pagination').empty();
+				$('.search__results').empty();
 			}
 			ajax_search = false;
 		}else{
